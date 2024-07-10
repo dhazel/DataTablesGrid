@@ -1,0 +1,35 @@
+
+@namespace DataTableGrid.Components.DataTableGrid
+@typeparam TGridItem
+
+<script
+        src="./_content/DataTableGrid/datatables.js"></script>
+<link rel="stylesheet"
+        href="./_content/DataTableGrid/datatables.css"/>
+<link rel="stylesheet"
+        href="./_content/DataTableGrid/components.css"/>
+
+
+<CascadingValue IsFixed="true" Value="this">@Columns</CascadingValue>
+
+<CascadingValue TValue="IQueryable<TGridItem>" IsFixed="true" Value="@Items">
+
+    <table @ref=_gridReference >
+        <caption></caption>
+        <thead>
+            <tr>
+                @foreach (var column in ColumnsToRender)
+                {
+                    <th>@column.Title</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+
+
+</CascadingValue>
+
