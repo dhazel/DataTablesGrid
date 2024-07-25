@@ -1,6 +1,6 @@
 
-DataTableGrid
-=============
+DataTablesGrid
+==============
 
 A simple Blazor wrapper for DataTables.net data grid.
 
@@ -10,15 +10,15 @@ Example:
 
 ```razor
 @rendermode InteractiveServer
-@using DataTableGrid.Components.DataTableGrid
+@using DataTablesGrid.Components.DataTablesGrid
 
-<DataTableGrid TGridItem="MyGridItem" Items="@items.AsQueryable()">
+<DataTablesGrid TGridItem="MyGridItem" Items="@items.AsQueryable()">
     <Columns>
         <GridColumn Property="@(p => p.Prop1)" Title="My Title"/>
         <GridColumn Property="@(p => p.Prop2)" Title="My Number"/>
         <GridColumn Property="@(p => p.Prop3)" Title="My Date" Format="yyyy-MM-dd"/>
     </Columns>
-</DataTableGrid>
+</DataTablesGrid>
 
 
 @code {

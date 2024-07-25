@@ -3,11 +3,11 @@ using System.Reflection;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
 
-namespace DataTableGrid.Components.DataTableGrid;
+namespace DataTablesGrid.Components.DataTablesGrid;
 
 
 /// <summary>
-/// Represents a column in a DataTableGrid<TGridItem> associated with an object's property.
+/// Represents a column in a DataTablesGrid<TGridItem> associated with an object's property.
 /// </summary>
 /// <typeparam name="TGridItem">The type of object represented by each row in the data grid.</typeparam>
 /// <typeparam name="TProperty">The type of the property whose values are displayed in the column's cells.</typeparam>

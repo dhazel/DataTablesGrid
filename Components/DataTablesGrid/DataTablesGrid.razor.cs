@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace DataTableGrid.Components.DataTableGrid;
+namespace DataTablesGrid.Components.DataTablesGrid;
 
 
 [CascadingTypeParameter(nameof(TGridItem))]
-public partial class DataTableGrid<TGridItem>
+public partial class DataTablesGrid<TGridItem>
 {
 
-    private const string JAVASCRIPT_FILE = "./_content/DataTableGrid/Components/DataTableGrid/DataTableGrid.razor.js";
+    private const string JAVASCRIPT_FILE = "./_content/DataTablesGrid/Components/DataTablesGrid/DataTablesGrid.razor.js";
 
     [Inject] private IJSRuntime JsRuntime { get; set; } = default!;
 
@@ -58,7 +58,7 @@ public partial class DataTableGrid<TGridItem>
                 }
                 catch (JSException ex)
                 {
-                    Console.WriteLine("[DataTableGrid] " + ex.Message);
+                    Console.WriteLine("[DataTablesGrid] " + ex.Message);
                 }
             }
             else

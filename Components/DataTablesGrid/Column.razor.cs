@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 
-namespace DataTableGrid.Components.DataTableGrid;
+namespace DataTablesGrid.Components.DataTablesGrid;
 
 
 /// <summary>
@@ -14,7 +14,7 @@ public abstract partial class Column<TGridItem>
     /// The data grid which owns this column.
     /// </summary>
     [CascadingParameter]
-    public DataTableGrid<TGridItem> DataGrid { get; set; }
+    public DataTablesGrid<TGridItem> DataGrid { get; set; }
 
     /// <summary>
     /// The value stored in this column.
